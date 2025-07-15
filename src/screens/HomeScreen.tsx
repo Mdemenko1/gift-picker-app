@@ -2,6 +2,7 @@ import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
 import HeaderBar from '../components/HeaderBar';
 import SearchBar from '../components/SearchBar';
+import { HomeHeader } from '../components/HomeHeader';
 
 const HomeScreen = () => {
   return (
@@ -11,7 +12,11 @@ const HomeScreen = () => {
         style={styles.background}
         resizeMode="cover"
       />
-      <HeaderBar />
+      {/* <HeaderBar /> */}
+      <View style={styles.headerPosition}>
+        <HomeHeader />
+      </View>
+
       <View style={styles.searchWrapper}>
         <SearchBar />
       </View>
@@ -37,5 +42,11 @@ const styles = StyleSheet.create({
     left: 0,
     right: 20,
     transform: [{ translateY: -25 }],
+  },
+  headerPosition: {
+    position: 'absolute',
+    top: '22%', // Adjust as needed
+    left: 20,
+    right: 20,
   },
 });
