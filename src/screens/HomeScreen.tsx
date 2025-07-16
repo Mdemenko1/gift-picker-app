@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, StyleSheet, Image } from 'react-native';
-import HeaderBar from '../components/HeaderBar';
 import SearchBar from '../components/SearchBar';
 import { HomeHeader } from '../components/HomeHeader';
+import PopularTags from '../components/PopularTags';
 
 const HomeScreen = () => {
   return (
@@ -19,6 +19,11 @@ const HomeScreen = () => {
 
       <View style={styles.searchWrapper}>
         <SearchBar />
+      </View>
+      <View style={styles.tags}>
+        <View>
+          <PopularTags />
+        </View>
       </View>
     </View>
   );
@@ -48,5 +53,12 @@ const styles = StyleSheet.create({
     top: '22%', // Adjust as needed
     left: 20,
     right: 20,
+  },
+  tags: {
+    position: 'absolute',
+    top: '45%',
+    display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
   },
 });
