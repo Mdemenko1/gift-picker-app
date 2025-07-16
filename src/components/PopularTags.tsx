@@ -1,5 +1,11 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 
 const TAGS = [
   'Christmas',
@@ -19,14 +25,27 @@ const PopularTags = () => {
       <Text style={styles.heading}>Popular categories</Text>
       <ScrollView
         contentContainerStyle={styles.tagsContainer}
-        horizontal
+        showsVerticalScrollIndicator={false}
         showsHorizontalScrollIndicator={false}
       >
-        {TAGS.map((tag, index) => (
-          <TouchableOpacity key={index} style={styles.tag}>
-            <Text style={styles.tagText}>{tag}</Text>
-          </TouchableOpacity>
-        ))}
+        <View style={styles.tagWrap}>
+          {TAGS.map((tag, index) => (
+            <TouchableOpacity
+              key={index}
+              style={[
+                styles.tag,
+                {
+                  backgroundColor:
+                    index % 2 === 0
+                      ? '#fdeafe' // light pink
+                      : '#ddeffd', // light blue
+                },
+              ]}
+            >
+              <Text style={styles.tagText}>{tag}</Text>
+            </TouchableOpacity>
+          ))}
+        </View>
       </ScrollView>
     </View>
   );
@@ -44,9 +63,13 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   tagsContainer: {
+    paddingBottom: 10,
+  },
+  tagWrap: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: 10,
+    justifyContent: 'flex-start',
+    gap: 5,
   },
   tag: {
     paddingHorizontal: 16,
@@ -56,7 +79,7 @@ const styles = StyleSheet.create({
     margin: 6,
   },
   tagText: {
-    color: '#fff',
+    color: '#000000',
     fontSize: 14,
     fontWeight: '500',
   },
