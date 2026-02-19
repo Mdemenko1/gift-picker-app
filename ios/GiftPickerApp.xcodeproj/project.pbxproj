@@ -9,21 +9,28 @@
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		16D347D2F2444536EAC22AF7 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		4E6832B32E26D8CC00AB137E /* GreatVibes-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E6832B22E26D8CC00AB137E /* GreatVibes-Regular.ttf */; };
 		62A3ABA89200017049B5C0FC /* libPods-GiftPickerApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C564981AF603450EB4339D2F /* libPods-GiftPickerApp.a */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02A41C898CA04DA0B55AFFE9 /* GreatVibes-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "GreatVibes-Regular.ttf"; path = "../src/assets/fonts/GreatVibes-Regular.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* GiftPickerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftPickerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GiftPickerApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GiftPickerApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = GiftPickerApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		4079042A2CE3484E9BF8A752 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = ../src/assets/fonts/FontAwesome.ttf; sourceTree = "<group>"; };
+		4E6832B22E26D8CC00AB137E /* GreatVibes-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "GreatVibes-Regular.ttf"; path = "../src/assets/Fonts/GreatVibes-Regular.ttf"; sourceTree = "<group>"; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = GiftPickerApp/AppDelegate.swift; sourceTree = "<group>"; };
+		78208AA4C9CB49559097373D /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = Fonts/MaterialIcons.ttf; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GiftPickerApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9677AF645FD1F55948745B63 /* Pods-GiftPickerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftPickerApp.release.xcconfig"; path = "Target Support Files/Pods-GiftPickerApp/Pods-GiftPickerApp.release.xcconfig"; sourceTree = "<group>"; };
+		9DBD600789814A7888A2D720 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = ../src/assets/fonts/MaterialIcons.ttf; sourceTree = "<group>"; };
 		ACA3AB0743D58172BE019655 /* Pods-GiftPickerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftPickerApp.debug.xcconfig"; path = "Target Support Files/Pods-GiftPickerApp/Pods-GiftPickerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		C564981AF603450EB4339D2F /* libPods-GiftPickerApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GiftPickerApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C80FD3AFA645449FB6381462 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = Fonts/FontAwesome.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -60,6 +67,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6623AC2BC2854092BD5CFE6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C80FD3AFA645449FB6381462 /* FontAwesome.ttf */,
+				78208AA4C9CB49559097373D /* MaterialIcons.ttf */,
+				4079042A2CE3484E9BF8A752 /* FontAwesome.ttf */,
+				02A41C898CA04DA0B55AFFE9 /* GreatVibes-Regular.ttf */,
+				9DBD600789814A7888A2D720 /* MaterialIcons.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,11 +89,13 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				4E6832B22E26D8CC00AB137E /* GreatVibes-Regular.ttf */,
 				13B07FAE1A68108700A75B9A /* GiftPickerApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				6623AC2BC2854092BD5CFE6D /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -158,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E6832B32E26D8CC00AB137E /* GreatVibes-Regular.ttf in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				16D347D2F2444536EAC22AF7 /* PrivacyInfo.xcprivacy in Resources */,
